@@ -73,7 +73,5 @@ DELIMITER ;
 
 CALL inserirDadoCreditCard(20000, 'BananaBank', '123456', 5, 4);
 
--- 03
-
-
+-- 03user_account
 

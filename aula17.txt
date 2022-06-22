@@ -1,0 +1,17 @@
+1) Ao usuário clicar em albuns, o aplicativo vai buscar todos os albuns. Os dados necessários são:
+imagem, nome do album, nome do artista/banda, quantidade de músicas.
+
+2) use spotify
+
+3) db.createCollection("album")
+
+db.album.insertMany([{nome: "A Beautiful Lie", artista: "30 Seconds to Mars", quantidadeMusicas: 1, imagem: "caminhoDaImagem"}, {nome: "An Awesome Wave", artista: "alt-J", quantidadeMusicas: 1, imagem: "caminhoDaImagem"}, {nome: "Gintama ED", artista: "amplified", quantidadeMusicas: 1, imagem: "caminhoDaImagem"}, {nome: "1", artista: "The Beatles", quantidadeMusicas: 1, imagem: "caminhoDaImagem"}, {nome: "Enema of the State", artista: "blink-182", quantidadeMusicas: 1, imagem: "caminhoDaImagem"}, {nome: "Feeling This", artista: "blink-182", quantidadeMusicas: 1, imagem: "caminhoDaImagem"}, {nome: "Take Off Your Pants and Jacket", artista: "blink-182", quantidadeMusicas: 1, imagem: "caminhoDaImagem"}])
+
+4) db.album.find().pretty()
+
+Helena Perdigueiro
+Renata da Silva Leal
+Carolina Hakamada
+Giovani Silva
+Romullo de Almeida
+Marcelo Miyoshi
