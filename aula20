@@ -1,0 +1,39 @@
+1) Quantidade de músicas gênero Rock: 1297
+
+2) use musimundos
+db.musimundos.aggregate([{
+ $group: {
+  _id: '$genero',
+  quantidade_musicas: {
+   $sum: 1
+  },
+  musica: {
+   $push: '$musica'
+  }
+ }
+}])
+
+3) Fica em saved pipelines no canto superior esquerdo, dentro de aggregate.
+
+4) Conseguimos visualizar as views criadas no menu lateral esquerdo, dentro do banco de dados.
+
+5) 155.6 kb
+
+6) db.musimundos.find({genero: "Heavy Metal"}).limit(5)
+
+7) db.musimundos.find({musica: /^You/})
+
+8) db.musimundos.getIndexes()
+
+9) db.musimundos.find({musica: / Love /})
+
+10) db.musimundos.distinct("genero")
+
+Giovani Silva
+Helena Perdigueiro
+Rômullo de Almeida
+Marcelo Miyoshi
+Carolina Hakamada
+David Silva
+Renata Leal
+Marcos Spano

@@ -1,0 +1,21 @@
+1) use catalogo
+db.atorFilme.distinct("filme")
+
+db.atorFilme.find({}, {_id: 0, nome: 1, sobrenome: 1}).sort({nome: 1})
+
+db.atorFilme.aggregate([{$group: {_id: "$filme", total: {$sum: 1}}}])
+
+2) db.atorFilme.insertMany([{_id: 44, nome: "Jodi", sobrenome: "Benson", filme: "A Pequena Sereia"}, {_id: 45, nome: "Samuel", sobrenome: "Wright", filme: "A Pequena Sereia"}, {_id: 46, nome: "Paddi", sobrenome: "Edwards", filme: "A Pequena Sereia"}])
+
+3) db.atorFilme.updateOne({_id: 15}, {$set: {nome: "Samuel", sobrenome: "Jackson"}})
+
+4) db.atorFilme.deleteMany({filme: "Harry Potter e as Relíquias da Morte - Parte 2"})
+
+Carolina Hakamada
+Helena Perdigueiro
+Rômullo de Almeida
+Renata Leal
+Giovani Silva
+David Silva
+Marcelo Miyoshi
+Aloisio Carvalho

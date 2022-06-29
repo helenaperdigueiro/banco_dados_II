@@ -1,0 +1,31 @@
+4) use catalogo
+db.filmes.find({}).sort({titulo: -1}).pretty()
+
+5) db.filmes.find({genero: "Aventura"}).pretty()
+
+6) db.filmes.find({avaliacao: {$gt: 9.0}}).sort({avaliacao: -1})
+
+7) db.filmes.find({genero: "Ficção Científica"}).count()
+retornou 5 filmes
+
+8) db.filmes.find().sort({avaliacao: -1}).limit(5)
+
+9) db.filmes.find({avaliacao: {$lte: 5}}).sort({avaliacao: -1})
+
+10) db.filmes.distinct("genero")
+[
+  'Animação',
+  'Aventura',
+  'Comédia',
+  'Drama',
+  'Ficção Científica',
+  'Infantil',
+  'Suspense'
+]
+
+Carolina Hakamada
+Helena Perdigueiro
+Renata Leal
+Giovani Silva
+Romullo de Almeida
+Marcelo Miyoshi
